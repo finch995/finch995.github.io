@@ -4,16 +4,28 @@
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style>
-      div {
-        border: 1px solid black;
-      }
-
       a {
         color: red;
       }
 
-      div a {
+      #exec-bio {
+        background-color: lightgrey;
+      }
+
+      .bio-box {
+        border: 1px solid black;
+      }
+
+      .bio-box a {
         color: green;
+      }
+
+      .bc {
+        background-color: azure;
+      }
+
+      #ora {
+        background-color: orange;
       }
     </style>
   </head>
@@ -21,7 +33,7 @@
     <h1>I'm an h1</h1>
     <ul>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a href="https://example.com/" id="ora">Link</a>
       </li>
       <li>
         <a href="https://example.com/">Link</a>
@@ -31,16 +43,16 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div>
+    <div id="exec-bio" class="bio-box bc">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box bc">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box bc">
       <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box bc">
       <a href="https://example.com/" style="color: green;">I'm a link</a>
     </div>
   </body>
